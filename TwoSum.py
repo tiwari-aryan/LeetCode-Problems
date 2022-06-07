@@ -1,7 +1,8 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
 
-        for i, num in enumerate(nums):
-            print(i, num)
-            if target - num in nums:
-                print(i, num)
+        dict_nums = {}
+        for i, n in enumerate(nums):
+            if target - n in dict_nums:
+                return [dict_nums[target - n], i]
+            dict_nums[n] = i
