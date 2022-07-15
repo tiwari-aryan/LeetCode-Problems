@@ -5,9 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(
-        self, l1: Optional[ListNode], l2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         sum_list = ListNode(0)
         sum_next = sum_list
         next_num = 0
